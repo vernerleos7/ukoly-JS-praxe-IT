@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripty.js"></script>
+    <title>Šachovnice</title>
+</head>
+<body>
+    <h1>Šachovnice</h1>
+    <div class="controls">
+        <label for="rows">Počet řádků:</label>
+        <input type="number" id="rows">
+        <label for="columns">Počet sloupců:</label>
+        <input type="number" id="columns">
+        <button class="generovat-button" onclick="generateChessboard()">Generovat</button>
+    </div>
+    <div id="chessboard"></div>
+    <div class="actions">
+        <button class="potvrdit-button" onclick="confirmChanges()">Potvrdit změny</button>
+        <button class="zrusit-button" onclick="cancelChanges()">Zrušit změny</button>
+    </div>
+</body>
+</html>

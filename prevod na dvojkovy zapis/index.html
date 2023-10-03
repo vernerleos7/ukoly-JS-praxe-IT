@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Převod na dvojkový zápis</title>
+</head>
+
+<body>
+    <h1>Zadej číslo:</h1>
+    <input type="number" id="cislo">
+    <button onclick="document.getElementById('vysledek').textContent = parseInt(document.getElementById('cislo').value, 10).toString(2)">Převeď na dvojkový zápis</button>
+    <p id="vysledek"></p>
+
+</body>
+</html>

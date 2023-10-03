@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generator cary</title>
+</head>
+
+<body>
+    <h1>Vygeneruj čáru</h1>
+    <p>Zadej počet teček:</p>
+    <input type="number" id="delkaCary">
+    <button onclick="generovatCaru()">Generovat</button>
+    <div id="cara"></div>
+
+    <script>
+        function generovatCaru() {
+            const delka = document.getElementById("delkaCary").value;
+            const cara = ".".repeat(delka);
+            document.getElementById("cara").textContent = cara;
+        }
+    </script>
+
+
+</body>
+</html>
